@@ -111,10 +111,12 @@
   .profile__column {
     margin: 0 0 20px;
   }
+
   .profile__edit-button {
     justify-content: center;
     margin: 0;
   }
+
   .profile__new-post {
     width: 288px;
     height: 52px;
