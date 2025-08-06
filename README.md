@@ -11,7 +11,7 @@ This project is a social media page that is used for sharing images. Users can c
 ## Deployment
 
 This webpage is deployed to GitHub Pages
--Deployment link: https://DaniPerkins.github.io/se_project_spots
+-Deployment link: https://daniperkins.github.io/se_project_spots/
 
 ### video
 
