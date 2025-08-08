@@ -44,7 +44,7 @@
   flex-direction: column;
 }
 
-.profile__edit-button {
+.profile__edit-btn {
   margin-top: auto;
   padding: 0;
   display: flex;
@@ -72,7 +72,7 @@
   border-radius: 8px;
 }
 
-.profile__new-post-button {
+.profile__new-post-btn {
   margin-right: 8px;
 }
 
@@ -80,7 +80,7 @@
   background-color: rgba(33, 33, 33, 0.8);
 }
 
-.profile__edit-button:hover {
+.profile__edit-btn:hover {
   color: rgba(33, 33, 33, 1);
 }
 
@@ -112,7 +112,7 @@
     margin: 0 0 20px;
   }
 
-  .profile__edit-button {
+  .profile__edit-btn {
     justify-content: center;
     margin: 0;
   }
