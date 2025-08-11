@@ -11,7 +11,7 @@
   align-items: center;
   padding: 10px;
   opacity: 0;
-  transition: visability 0s linear 0.5s, opacity 0.5s linear;
+  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
 }
 
 .modal_is-opened {
@@ -38,6 +38,7 @@
   background-image: url(../images/close_icon.svg);
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .modal__title {
@@ -72,7 +73,7 @@
 }
 
 .modal__input::placeholder {
-  color: rbga(33, 33, 33, 0.3);
+  color: rgba(33, 33, 33, 0.3);
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -88,6 +89,7 @@
   font-weight: 500;
   font-size: 16px;
   color: #fcf5e5;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 630px) {
