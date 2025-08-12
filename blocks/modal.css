@@ -70,6 +70,7 @@
   border-radius: 8px;
   padding: 0 0 0 12px;
   border: 1px rgba(33, 33, 33, 0.4) solid;
+  box-sizing: border-box;
 }
 
 .modal__input::placeholder {
