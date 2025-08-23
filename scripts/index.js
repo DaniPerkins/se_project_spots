@@ -61,12 +61,11 @@ editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
 function handleNewPostSubmit(evt) {
   evt.preventDefault();
-  newPostImageInputEl.textContent = newPostImageInput.value;
-  newPostImageCaptionInputEl.textContent = newPostImageCaptionInput.value;
+  console.log("Image link:", newPostImageInput.value);
+  console.log("Caption:", newPostImageCaptionInput.value);
   closeModal(newPostModal);
 }
 
 newPostForm.addEventListener("submit", handleNewPostSubmit);
 
-console.log("Image link:", newPostImageInput.value);
 console.log("Caption:", newPostImageCaptionInput.value);
