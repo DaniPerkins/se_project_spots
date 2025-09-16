@@ -48,8 +48,10 @@ const newPostImageCaptionInput = newPostModal.querySelector(
 const profileNameInputEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
 
-const newPostImageInputEl = document.querySelector(".card__image");
-const newPostImageCaptionInputEl = document.querySelector(".card__title");
+const newPostImageInputEl = document.querySelector("#card-image-input");
+const newPostImageCaptionInputEl = document.querySelector(
+  "#image-caption-input"
+);
 
 const previewModal = document.querySelector("#preview-modal");
 const previewModalCloseBtn = previewModal.querySelector(".modal__close");
@@ -75,7 +77,7 @@ function getCardElement(data) {
     cardLikeBtnEl.classList.toggle("card__like_btn_active");
   });
 
-  const cardDeleteBtnEl = cardElement.querySelector(".card__delete-btn");
+  let cardDeleteBtnEl = cardElement.querySelector(".card__delete-btn");
   cardDeleteBtnEl.addEventListener("click", () => {
     cardElement.remove();
     cardElement = null;
