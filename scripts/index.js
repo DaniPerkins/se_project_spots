@@ -48,8 +48,10 @@ const newPostImageCaptionInput = newPostModal.querySelector(
 const profileNameInputEl = document.querySelector(".profile__name");
 const profileDescriptionEl = document.querySelector(".profile__description");
 
-const newPostImageInputEl = document.querySelector(".card__image");
-const newPostImageCaptionInputEl = document.querySelector(".card__title");
+const newPostImageInputEl = document.querySelector("#card-image-input");
+const newPostImageCaptionInputEl = document.querySelector(
+  "#image-caption-input"
+);
 
 const previewModal = document.querySelector("#preview-modal");
 const previewModalCloseBtn = previewModal.querySelector(".modal__close-btn");
@@ -146,6 +148,9 @@ newPostForm.addEventListener("submit", function (evt) {
 
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
+
+  newPostImageCaptionInput.value = "";
+  newPostImageInput.value = "";
 
   closeModal(newPostModal);
 });
