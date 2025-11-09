@@ -65,6 +65,7 @@
 }
 
 .modal__label {
+  display: block;
   margin: 0 0 32px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
@@ -83,11 +84,24 @@
   box-sizing: border-box;
 }
 
+.modal__input_type_error {
+  border: 1px solid rgba(255, 0, 0, 0.6);
+}
+
 .modal__input::placeholder {
   color: rgba(33, 33, 33, 0.3);
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 20px;
+}
+
+.modal__error {
+  display: block;
+  margin-top: 8px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgba(255, 0, 0, 0.7);
 }
 
 .modal__submit-btn {
