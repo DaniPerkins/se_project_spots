@@ -117,6 +117,9 @@
   cursor: pointer;
 }
 
+.modal__submit-btn-disabled {
+}
+
 .modal__image-container {
   position: relative;
 }
