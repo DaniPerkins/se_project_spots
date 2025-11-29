@@ -60,6 +60,13 @@ const toggleButtonState = (inputList, buttonElement, config) => {
   }
 };
 
+const removeErrors = (formElement, inputList, config) => {
+  inputList.forEach((inputElement) => {
+    inputElement.value = "";
+    hideInputError(formElement, inputElement, config);
+  });
+};
+
 const setEventListeners = (formElement, config) => {
   const inputList = Array.from(
     formElement.querySelectorAll(config.inputSelector)

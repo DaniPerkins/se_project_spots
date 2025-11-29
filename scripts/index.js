@@ -92,12 +92,21 @@ function getCardElement(data) {
   return cardElement;
 }
 
+function handleEscape(evt) {
+  if (evt.key === "Escape") {
+    const activePopup = document.querySelector(".modal_is-opened");
+    closeModal(activePopup);
+  }
+}
+
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
+  document.addEventListener("keyup", handleEscape);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
+  document.removeEventListener("keyup", handleEscape);
 }
 
 editProfileBtn.addEventListener("click", function () {
@@ -111,6 +120,11 @@ editProfileCloseBtn.addEventListener("click", function () {
 });
 
 newPostBtn.addEventListener("click", function () {
+  removeErrors(
+    newPostModal,
+    [newPostImageCaptionInput, newPostImageInput],
+    settings
+  );
   openModal(newPostModal);
 });
 
