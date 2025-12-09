@@ -42,12 +42,12 @@ const hasInvalidInput = (inputList) => {
   });
 };
 
-const disableButton = (buttonElement, config) => {
+const disableButton = (buttonElement, config = settings) => {
   buttonElement.disabled = true;
   buttonElement.classList.add(config.inactiveButtonClass);
 };
 
-const enableButton = (buttonElement, config) => {
+const enableButton = (buttonElement, config = settings) => {
   buttonElement.disabled = false;
   buttonElement.classList.remove(config.inactiveButtonClass);
 };
@@ -80,6 +80,11 @@ const setEventListeners = (formElement, config) => {
       checkInputValidity(formElement, inputElement, config);
       toggleButtonState(inputList, buttonElement, config);
     });
+  });
+
+  ////////////////////////////
+  buttonElement.addEventListener("click", () => {
+    toggleButtonState(inputList, buttonElement, config);
   });
 };
 

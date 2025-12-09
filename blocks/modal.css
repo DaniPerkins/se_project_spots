@@ -118,6 +118,7 @@
 }
 
 .modal__submit-btn-disabled {
+  background: purple;
 }
 
 .modal__image-container {

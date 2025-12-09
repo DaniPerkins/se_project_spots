@@ -99,14 +99,21 @@ function handleEscape(evt) {
   }
 }
 
+function handleOverlayClick(evt) {
+  if (evt.target === evt.currentTarget) {
+    closeModal(evt.currentTarget);
+  }
+}
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
   document.addEventListener("keyup", handleEscape);
+  modal.addEventListener("click", handleOverlayClick);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
   document.removeEventListener("keyup", handleEscape);
+  modal.removeEventListener("click", handleOverlayClick);
 }
 
 editProfileBtn.addEventListener("click", function () {
@@ -145,13 +152,6 @@ function handleEditProfileSubmit(evt) {
 
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
 
-function handleNewPostSubmit(evt) {
-  evt.preventDefault();
-  console.log("Image link:", newPostImageInput.value);
-  console.log("Caption:", newPostImageCaptionInput.value);
-  closeModal(newPostModal);
-}
-
 newPostForm.addEventListener("submit", function (evt) {
   evt.preventDefault();
 
@@ -166,6 +166,7 @@ newPostForm.addEventListener("submit", function (evt) {
   newPostImageCaptionInput.value = "";
   newPostImageInput.value = "";
 
+  disableButton(newPostForm.querySelector("button"));
   closeModal(newPostModal);
 });
 
