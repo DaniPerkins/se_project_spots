@@ -16,7 +16,7 @@ This webpage is deployed to GitHub Pages
 ### video
 
 This is the link to a video of my project
--Video link: https://drive.google.com/file/d/1N2qWhq0xmOboULWQ-452oEkDaif8VmFp/view?usp=sharing
+-Video link: https://drive.google.com/file/d/1mDVeuKX7bq00xLDMvlh-eP3TKz_vn15i/view?usp=sharing
 **Intro**
 
 This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.

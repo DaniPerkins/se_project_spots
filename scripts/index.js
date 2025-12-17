@@ -119,6 +119,13 @@ function closeModal(modal) {
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameInputEl.textContent;
   editProfileDescriptionInput.value = profileDescriptionEl.textContent;
+
+  removeErrors(
+    editProfileModal,
+    [editProfileNameInput, editProfileDescriptionInput],
+    settings
+  );
+
   openModal(editProfileModal);
 });
 
